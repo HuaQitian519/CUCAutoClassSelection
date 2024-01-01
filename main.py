@@ -40,6 +40,7 @@ print('StudentCode:',studentcode)
 # 关闭浏览器
 driver.quit()
 print('开始模拟查询信息！（PS：由于写代码时已经错过选课时间，无法爬取正常选课信息，故这里用查询来模拟抢课，后抢课时会将代码重写）')
+# 这里将是抢课模块，现在为模拟课程查询模块，查询成功将显示10个课程，也可以通过修改代码显示更多课程
 url = 'https://xsxk.cuc.edu.cn/xsxkapp/sys/xsxkapp/elective/queryCourse.do'
 cookiesinfo='_WEU='+cookies[1]["value"]+'; JSESSIONID='+cookies[0]['value']
 # 请求头部
